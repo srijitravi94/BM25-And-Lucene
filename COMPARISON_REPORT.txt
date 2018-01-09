@@ -1,0 +1,298 @@
+COMPARISON BETWEEN LUCENE AND BM25 MODELS:
+
+
+Query 1 : hurricane isabel damage
+
+Top 5 results using Lucene model :
+
+1   Q0   HurricaneIsabel   1   0.5862864    LuceneModel
+1   Q0   EffectsofHurricaneIsabelinNewJersey   2   0.56121397    LuceneModel
+1   Q0   EffectsofHurricaneIsabelinDelaware   3   0.54046476    LuceneModel
+1   Q0   EffectsofHurricaneIsabelinPennsylvania   4   0.517107    LuceneModel
+1   Q0   EffectsofHurricaneIsabelinNewYorkandNewEngland   5   0.4819831    LuceneModel
+
+Top 5 results using BM25 model :
+
+1   Q0   HurricaneIsabel   1   7.177803986078931   BM25
+1   Q0   EffectsofHurricaneIsabelinPennsylvania   2   7.0438069882806875   BM25
+1   Q0   EffectsofHurricaneIsabelinNewYorkandNewEngland   3   7.030627086075252   BM25
+1   Q0   EffectsofHurricaneIsabelinNorthCarolina   4   7.027790951079487   BM25
+1   Q0   EffectsofHurricaneIsabelinMarylandandWashingtonDC   5   7.014578989409684   BM25
+
+OVERLAPS IN BOTH MODELS:
+
+HurricaneIsabel, EffectsofHurricaneIsabelinNewYorkandNewEngland and EffectsofHurricaneIsabelinPennsylvania are part of the top 5 results by both the models.
+
+OTHER OBSERVATIONS:
+
+1. EffectsofHurricaneIsabelinNewJersey ranked 2 in the Lucene model has been ranked 6 in the BM25 model.
+2. EffectsofHurricaneIsabelinDelaware ranked 3 in Lucene model has been ranked 8 in the BM25 model.
+3. EffectsofHurricaneIsabelinNorthCarolina ranked 4 in BM25 model has been ranked 6 in the Lucene model.
+4. EffectsofHurricaneIsabelinMarylandandWashingtonDC ranked 5 in BM25 model has been ranked 7 in the Lucene model.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Query 2 : forecast models
+
+Top 5 results using Lucene model :
+
+2   Q0   Tropicalcyclonepredictionmodel   1   0.4736197    LuceneModel
+2   Q0   Tropicalcyclonetrackforecasting   2   0.3546672    LuceneModel
+2   Q0   Tropicalcyclonerainfallforecasting   3   0.33091372    LuceneModel
+2   Q0   Weatherforecasting   4   0.29216573    LuceneModel
+2   Q0   HistoryofAtlantictropicalcyclonewarnings   5   0.28777725    LuceneModel
+
+Top 5 results using BM25 model :
+
+2   Q0   Tropicalcyclonepredictionmodel   1   7.757827717408096   BM25
+2   Q0   Tropicalcyclonerainfallforecasting   2   7.483241653350052   BM25
+2   Q0   Weatherforecasting   3   7.4574178835112335   BM25
+2   Q0   Tropicalcyclonetrackforecasting   4   7.433841776519634   BM25
+2   Q0   HistoryofAtlantictropicalcyclonewarnings   5   7.3491407942385205   BM25
+
+OVERLAPS IN BOTH MODELS:
+
+Tropicalcyclonepredictionmodel, Tropicalcyclonetrackforecasting, Tropicalcyclonerainfallforecasting, Weatherforecasting and HistoryofAtlantictropicalcyclonewarnings are part of the top 5 results by both the models.
+
+OTHER OBSERVATIONS :
+
+It can be inferred that both models have high overlaps in the top 5 results.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Query 3 : green energy canada
+
+Top 5 results using Lucene model :
+
+3   Q0   Canada   1   0.24245597    LuceneModel
+3   Q0   Energysource   2   0.24070051    LuceneModel
+3   Q0   Mechanicalenergy   3   0.22322318    LuceneModel
+3   Q0   AtlanticCanada   4   0.20580177    LuceneModel
+3   Q0   Ontario   5   0.18955168    LuceneModel
+
+Top 5 results using BM25 model :
+
+3   Q0   Ontario   1   6.426555342200901   BM25
+3   Q0   Weatherradar   2   6.238369767349424   BM25
+3   Q0   Energysource   3   5.2633141615088075   BM25
+3   Q0   Thermalradiation   4   5.128668607210404   BM25
+3   Q0   UnitedStatesDepartmentofEnergy   5   4.932194891335337   BM25
+
+OVERLAPS IN BOTH MODELS:
+
+Ontario and Energysource are part of the top 5 results by both the models.
+
+OTHER OBSERVATIONS:
+
+1. Canada ranked 1 in the Lucene model has been ranked 13 in the BM25 model.
+2. Mechanicalenergy ranked 3 in Lucene model has been ranked 7 in the BM25 model.
+3. AtlanticCanada ranked 4 in Lucene model has been ranked 6 in the BM25 model.
+4. Weatherradar ranked 2 in BM25 model has been ranked 8 in the Lucene model.
+5. Thermalradiation ranked 4 in BM25 model has been ranked 9 in the Lucene model.
+6. UnitedStatesDepartmentofEnergy ranked 5 in BM25 model has been ranked 7 in the Lucene model.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Query 4 : heavy rains
+
+Top 5 results using Lucene model :
+
+4   Q0   HurricaneBollingerCountyMissouri   1   0.28160807    LuceneModel
+4   Q0   HurricaneCleo   2   0.2012359    LuceneModel
+4   Q0   HurricaneCesarE28093Douglas   3   0.18890844    LuceneModel
+4   Q0   TropicalStormMarco2008   4   0.1788638    LuceneModel
+4   Q0   HurricaneIda2009   5   0.17460528    LuceneModel
+
+Top 5 results using BM25 model :
+
+4   Q0   HurricaneCleo   1   4.7516555174313835   BM25
+4   Q0   HurricaneHilda   2   4.7192224777111695   BM25
+4   Q0   HurricaneJoanE28093Miriam   3   4.674530856789716   BM25
+4   Q0   HurricaneIda2009   4   4.618883730644551   BM25
+4   Q0   HurricaneCesarE28093Douglas   5   4.600630782649423   BM25
+
+OVERLAPS IN BOTH MODELS:
+
+HurricaneCleo, HurricaneCesarE28093Douglas and HurricaneIda2009 are part of the top 5 results by both the models.
+
+OTHER OBSERVATIONS:
+
+1. HurricaneBollingerCountyMissouri ranked 1 in the Lucene model has been ranked 32 in the BM25 model.
+2. TropicalStormMarco2008 ranked 4 in Lucene model has been ranked 8 in the BM25 model.
+3. HurricaneHilda ranked 2 in BM25 model has been ranked 7 in the Lucene model.
+4. HurricaneJoanE28093Miriam ranked 3 in BM25 model has been ranked 6 in the Lucene model.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Query 5 : hurricane music lyrics
+
+Top 5 results using Lucene model :
+
+5   Q0   HurricaneNatalieGrantalbum   1   0.37984896    LuceneModel
+5   Q0   Audioboxer   2   0.36782503    LuceneModel
+5   Q0   HurricaneLeonEverettesong   3   0.36490422    LuceneModel
+5   Q0   BadmanEP   4   0.3383304    LuceneModel
+5   Q0   HurricaneThricesong   5   0.33670396    LuceneModel
+
+Top 5 results using BM25 model :
+
+5   Q0   BadmanEP   1   9.633352072383408   BM25
+5   Q0   HurricaneNatalieGrantalbum   2   9.590085892456521   BM25
+5   Q0   Vices26Virtues   3   9.524989915331709   BM25
+5   Q0   BajanStyle   4   8.7889283554535   BM25
+5   Q0   AddictedRomantic   5   8.71259378802488   BM25
+
+OVERLAPS IN BOTH MODELS:
+
+HurricaneNatalieGrantalbum, BadmanEP are part of the top 5 results by both the models.
+
+OTHER OBSERVATIONS:
+
+1. Audioboxer ranked 2 in the Lucene model has been ranked 8 in the BM25 model.
+2. HurricaneLeonEverettesong ranked 3 in Lucene model has been ranked 10 in the BM25 model.
+3. HurricaneThricesong ranked 5 in Lucene model has been ranked 7 in the BM25 model.
+4. Vices26Virtues ranked 3 in BM25 model has been ranked 9 in the Lucene model.
+5. BajanStyle ranked 4 in BM25 model has been ranked 16 in the Lucene model.
+6. AddictedRomantic ranked 5 in BM25 model has been ranked 7 in the Lucene model.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Query 6 : accumulated snow
+
+Top 5 results using Lucene model :
+
+6   Q0   Snow   1   0.35687837    LuceneModel
+6   Q0   Winterstorm   2   0.3340857    LuceneModel
+6   Q0   Graupel   3   0.31450093    LuceneModel
+6   Q0   Blizzard   4   0.24074307    LuceneModel
+6   Q0   Freezingrain   5   0.23050937    LuceneModel
+
+Top 5 results using BM25 model :
+
+6   Q0   Hail   1   7.749301804355977   BM25
+6   Q0   Snow   2   7.591232182864738   BM25
+6   Q0   Graupel   3   7.547836350793006   BM25
+6   Q0   Freezingrain   4   6.9195679683151665   BM25
+6   Q0   Winterstorm   5   6.912901919916063   BM25
+
+OVERLAPS IN BOTH MODELS:
+
+Snow, Winterstorm, Graupel and Freezingrain are part of the top 5 results by both the models.
+
+OTHER OBSERVATIONS:
+
+1. Blizzard ranked 4 in Lucene model has been ranked 7 in the BM25 model.
+2. Hail ranked 1 in BM25 model has been ranked 6 in the Lucene model.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Query 7 : snow accumulation
+
+Top 5 results using Lucene model :
+
+7   Q0   Rainandsnowmixed   1   0.5276042    LuceneModel
+7   Q0   Snowroller   2   0.4501021    LuceneModel
+7   Q0   Icepellets   3   0.43589634    LuceneModel
+7   Q0   Winterstorm   4   0.3840497    LuceneModel
+7   Q0   Snow   5   0.38103598    LuceneModel
+
+Top 5 results using BM25 model :
+
+7   Q0   Rainandsnowmixed   1   9.71802669884335   BM25
+7   Q0   Icestorm   2   9.657091089007608   BM25
+7   Q0   Icepellets   3   9.642419951564708   BM25
+7   Q0   Snow   4   9.44035670418463   BM25
+7   Q0   Winterstorm   5   9.21890274081365   BM25
+
+OVERLAPS IN BOTH MODELS:
+
+Rainandsnowmixed, Icepellets, Winterstorm and Snow are part of the top 5 results by both the models.
+
+OTHER OBSERVATIONS:
+
+1. Snowroller ranked 2 in Lucene model has been ranked 8 in the BM25 model.
+2. Icestorm ranked 2 in BM25 model has been ranked 6 in the Lucene model.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Query 8 : massive blizzards blizzard
+
+Top 5 results using Lucene model :
+
+8   Q0   Groundblizzard   1   0.6984827    LuceneModel
+8   Q0   Blizzard   2   0.54514635    LuceneModel
+8   Q0   Winterstorm   3   0.23266715    LuceneModel
+8   Q0   Icestorm   4   0.18185739    LuceneModel
+8   Q0   Severeweather   5   0.17895238    LuceneModel
+
+Top 5 results using BM25 model :
+
+8   Q0   Blizzard   1   17.1326856186324   BM25
+8   Q0   Groundblizzard   2   16.940760384295395   BM25
+8   Q0   Winterstorm   3   12.995636137299027   BM25
+8   Q0   Severeweather   4   12.933172001000411   BM25
+8   Q0   Icestorm   5   11.460298453100634   BM25
+
+OVERLAPS IN BOTH MODELS:
+
+Groundblizzard, Blizzard, Winterstorm, Icestorm and Severeweather are part of the top 5 results by both the models.
+
+OTHER OBSERVATIONS :
+
+It can be inferred that both models have high overlaps in the top 5 results.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Query 9 : new york city subway
+
+Top 5 results using Lucene model :
+
+9   Q0   NewYorkCity   1   0.42339036    LuceneModel
+9   Q0   NewYorkstate   2   0.3481208    LuceneModel
+9   Q0   ISSdisambiguation   3   0.32748708    LuceneModel
+9   Q0   HurricaneSandy   4   0.22957027    LuceneModel
+9   Q0   NewJersey   5   0.2206825    LuceneModel
+
+Top 5 results using BM25 model :
+
+9   Q0   NewYorkCity   1   8.850599772306337   BM25
+9   Q0   ISSdisambiguation   2   8.336921569722731   BM25
+9   Q0   WashingtonMetro   3   8.162835971202188   BM25
+9   Q0   HurricaneSandy   4   8.15888199832003   BM25
+9   Q0   HurricanePuffyAmiYumisong   5   7.853879714573643   BM25
+
+OVERLAPS IN BOTH MODELS:
+
+NewYorkCity, ISSdisambiguation and HurricaneSandy are part of the top 5 results by both the models.
+
+OTHER OBSERVATIONS :
+
+1. NewYorkstate ranked 2 in the Lucene model has been ranked 6 in the BM25 model.
+2. NewJersey ranked 5 in Lucene model has been ranked 11 in the BM25 model.
+3. WashingtonMetro ranked 3 in BM25 model has been ranked 7 in the Lucene model.
+4. HurricanePuffyAmiYumisong ranked 5 in BM25 model has been ranked 20 in the Lucene model.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+
+INFERENCE :
+
+It can be noted that for those results (of some queries) with less overlap, most of the non-overlapping documents can be found in the top 10 results.
+Results of both the model have high degree of overlaps indicating that although the algorithm is different, their working idea is same.

@@ -1,0 +1,70 @@
+IMPLEMENTATION REPORT :
+
+BM25 Algorithm has been implemented in the following steps:
+
+1. A function to parse the CORPUS documents to find the Inverted Index.
+2. A function to parse the Query document for ease of use.
+3. A function to calculate the length of each document in the corpus.
+4. A function to calculate the average length of documents.
+5. A function to find the term frequencies in the queries.
+6. A function to calculate the BM25 score given all the parameters.
+7. A function to pass the query, calculate required parameters and find the score for each document.
+8. A function to write the tOP 100 ranked documents to a file for each query.
+
+
+Function 1: 
+PARSE THE CORPUS TO FIND INVERTED INDEX
+
+Collate all the words from all the documents, store the following two details:
+1. All the documents that has this word.
+2. Number of times this word has been repeated in each of this document.
+
+
+Function 2:
+PARSE THE QUERY DOCUMENT
+
+Parse this document and convert it into a list of lists.
+
+
+Function 3:
+CALCULATE THE LENGTH OF EACH DOCUMENT
+
+From the CORPUS folder, find the number of words each document has and store it in a dictionary.
+
+
+Function 4:
+CALCULATE THE AVERAGE LENGTH OF ALL THE DOCUMENTS
+
+From the function 3 returned dictionary, extract all the file lengths and find their average.
+
+
+Function 5:
+CALCULATE FREQUENCIES OF THE TERMS IN QUERIES
+
+Given a query, if a word is repeated, increase its frequencies and do so till end of terms in a query.
+Store the same in a dictionary.
+
+
+Function 6:
+CALCULATE BM25 SCORE GIVEN THE REQUIRED PARAMETERS
+
+Given the following paramters are required: (n, f, qf, r, N, dl, avdl), the following steps are done to find the BM25 score:
+
+Step1: Calculate K as: K = k1 * ((1 - b) + b * (float(dl) / float(avdl)))
+Step2: Calculate Quantity1 as : Q1 = log(((r + 0.5) / (R - r + 0.5)) / ((n - r + 0.5) / (N - n - R + r + 0.5)))
+Step3: Calculate Quantity2 as : Q2 = ((k1 + 1) * f) / (K + f)
+Step4: Calculate Quantity3 as : Q3 = ((k2 + 1) * qf) / (k2 + qf)
+Step5: Calculate BM25score as : Q1 * Q2 * Q3
+
+
+Function 7:
+CALCULATE THE DOCUMENT SCORE FOR EACH QUERY BASED ON BM25 SCORE
+
+Given each of the query, the necessary parameters for finding BM25 score are calculated by calling appropriate functions described above.
+
+
+Function 8:
+WRITE THE TOP 100 DOCUMENTS FOR EACH QUERY TO A FILE
+
+The scored documents are sorted and the first 100 ranked documents are written to file. This step is repeated for all the queries in the query document.
+CALCULATE BM25 SCORE FOR EACH OF THIS QUERY
